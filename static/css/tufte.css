@@ -41,7 +41,7 @@
 
 /* Tufte CSS styles */
 html {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 body {
@@ -321,9 +321,11 @@ div.table-wrapper {
 }
 
 code, pre > code {
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-family: "JetBrains Mono", monospace;
+    font-variant-ligatures: none;
     font-size: 1.0rem;
-    line-height: 1.42;
+    line-height: 1.3;
+    /* line-height: 1.42; */
     -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
 }
 
@@ -343,7 +345,7 @@ h3 > code {
 }
 
 pre > code {
-    font-size: 0.9rem;
+    /* font-size: 0.9rem; */
     /* width: 52.5%; */
     margin-left: 2.5%;
     overflow-x: auto;
@@ -393,9 +395,7 @@ label.margin-toggle:not(.sidenote-number) {
 
 @media (max-width: 760px) {
     body {
-        width: 84%;
-        padding-left: 8%;
-        padding-right: 8%;
+        padding: 2ch;
     }
 
     hr,
