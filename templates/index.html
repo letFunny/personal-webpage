@@ -1,0 +1,315 @@
+{% extends "base.html" %}
+
+{% block title %}About me{% endblock %}
+
+{% block content %}
+  <article>
+    <h1>About me</h1>
+    <p class="subtitle">Alberto Carretero</p>
+    <section>
+      <div class="epigraph">
+      <blockquote>
+        <p>
+          That's funny because if anyone actually did prove the existence of God we'd just tell him “nice proof, Fraa Bly” and start believing in God.
+        </p>
+        <footer>Neal Stephenson, Anathem</footer>
+      </blockquote>
+      </div>
+      <p>
+        I am a very curious person, I enjoy learning about anything especially
+        if it is related to computers. As of lately, I am mostly interested in
+        <strong>distributed systems</strong> and <strong>storage</strong> but
+        in the past I have also enjoyed learning about <strong>programming
+        language theory</strong> and about <strong>security</strong>.
+      </p>
+      <p>
+        I currently reside in <strong>Spain</strong>.
+      </p>
+      <p>
+        My personal interests, apart from programming, are reading fiction and
+        non fiction, listening to all types of music, cooking and meal prepping
+        and sports.
+      </p>
+      <p>
+        You can find my CV <a style="color:#3273dc" href="/files/main.pdf">here</a>
+        and my email address is <span style="color: #3273dc">angelalbertoc.r<b>(AT)</b>gmail.com</span>.
+        <label for="sn-email" class="margin-toggle sidenote-number"></label>
+        <input type="checkbox" id="sn-email" class="margin-toggle"/>
+        <span class="sidenote">The email is written like this to prevent bots to crawl the email by identifying the @.</span>
+      </p>
+    </section>
+    <section>
+        <h2>Section in the works ...</h2>
+    </section>
+    <!--<section>
+        <h2>Some past personal projects</h2>
+        <p>
+          Here you can find several projects I have completed that showcase my
+          different interests.
+        </p>
+        <h3><a href="https://gitlab.com/letFunny/simple-http-c-server">C Simple Http Server</a></h3>
+        <p>
+        <label for="mn-project1" class="margin-toggle">&#8853;</label>
+        <input type="checkbox" id="mn-project1" class="margin-toggle"/>
+        <span class="marginnote">
+          <strong>Technologies:</strong>
+            <span class="project-technology">C</span>,
+            <span class="project-technology">Unix/Linux sockets, pipes, threads and forks</span>.
+        </br>
+          <strong>Tags:</strong>
+            <span class="project-technology">Networking</span>,
+            <span class="project-technology">Low level</span>,
+            <span class="project-technology">Detailed documentation</span>.
+        </span>
+          HTTP 1.1 mostly compliant server written in C. It follows the spec for an
+          assignment in the Networking class at university. The implementation was free form and is explained in
+          the
+          documentation along with the major design choices.
+        </p>
+        <h3><a href="https://gitlab.com/letFunny/dyntypes">Dyntypes</a></h3>
+        <p>
+        <label for="mn-project2" class="margin-toggle">&#8853;</label>
+        <input type="checkbox" id="mn-project2" class="margin-toggle"/>
+        <span class="marginnote">
+                <strong>Technologies:</strong>
+                  <span class="project-technology">Rust</span>,
+                  <span class="project-technology">Parser combinators</span>,
+                  <span class="project-technology">Type system</span>,
+                  <span class="project-technology">Tree-walk interpreter</span>.
+        </br>
+                <strong>Tags:</strong>
+                  <span class="project-technology">Abstraction</span>,
+                  <span class="project-technology">High level programming</span>,
+                  <span class="project-technology">Data structures</span>.
+        </span>
+          A tree-walk interpreter from 0 (completely from
+          scratch, no libraries used) for an esoteric programming language I
+          designed. In the process, we implement our own library of parser combinators,
+          a very simple type system and a tree-walk interpreter whilst also learning
+          about closures, expressiveness and how a compiler works. This knowledge
+          is extensively documented in the memoirs that serve as my Computer
+          Science's bachelor thesis (<a href="/files/dyntypes.pdf">link</a>).
+        </p>
+        <h3><a href="https://gitlab.com/letFunny/eudyptula-kernel-challenge">Eudyptula Linux Kernel challenges</a></h3>
+        <p>
+        <label for="mn-project3" class="margin-toggle">&#8853;</label>
+        <input type="checkbox" id="mn-project3" class="margin-toggle"/>
+        <span class="marginnote">
+                <strong>Technologies:</strong>
+                  <span class="project-technology">Linux Kernel modules</span>,
+                  <span class="project-technology">Busybox</span>,
+                  <span class="project-technology">Linux</span>,
+                  <span class="project-technology">Qemu</span>,
+                  <span class="project-technology">initramfs</span>.
+        </br>
+                <strong>Tags:</strong>
+                  <span class="project-technology">Low level</span>,
+                  <span class="project-technology">GNU/Linux</span>.
+        </span>
+                Created a small bespoke environment for Linux kernel development in
+                Qemu consisting of Busybox and a custom initramfs to solve the
+                eudyptula challenge. Created several Kernel modules as part of the
+                challenge solutions. Got a simple patch merged into the mainline
+                kernel.
+
+                Currently in progress.
+        </p>
+        <h3><a href="/files/relativity.pdf">Pseudo-Riemannian Geometry and Schwarzschild Spacetime</a></h3>
+        <p>
+        <label for="mn-project4" class="margin-toggle">&#8853;</label>
+        <input type="checkbox" id="mn-project4" class="margin-toggle"/>
+        <span class="marginnote">
+                <strong>Technologies:</strong>
+                  <span class="project-technology">Math, geometry</span>,
+                  <span class="project-technology">Some physics</span>.
+        </br>
+                <strong>Tags:</strong>
+                  <span class="project-technology">Abstraction</span>.
+        </span>
+          My Math's bachelor thesis.
+        </p>
+            <div class="tile is-parent is-6">
+              <div class="tile is-child box">
+                <h1 class="title"><a href="https://blog.letfunny.com/">Security/Software Blog</a></h1>
+                <p class="subtitle description"> Blog where I post writeups for CTFs that I find particularly interesting.
+                  There are also more general posts on software, books, etc.
+                </p>
+                <p class="subtitle project-technologies"><strong>Tags:</strong>
+                  <span class="project-technology">Security</span> ,
+                  <span class="project-technology">CTF</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tile">
+            <div class="tile is-parent is-6">
+              <div class="tile is-child box">
+                <h1 class="title"><a href="https://gitlab.com/letFunny/torrentstats">Torrent Stats</a></h1>
+                <div class="subtitle description">
+                  <p>
+                    Gather the list of peers (IP + Port) from all the trackers of
+                    a torrent to create statistics.
+                  </p>
+                  <p>
+                    I used this utility to gather stats about media consumption
+                    by getting the peers for movie torrents, geo-locating the IPs and then plotting a chart to
+                    show which countries were more interested.
+                  </p>
+                </div>
+                <p class="subtitle project-technologies"><strong>Technologies:</strong>
+                  <span class="project-technology">Rust</span> ,
+                  <span class="project-technology">Async/Tokio</span> ,
+                  <span class="project-technology">Serde</span> ,
+                  <span class="project-technology">Ground-up UDP protocol</span>
+                </p>
+                <p class="subtitle project-technologies"><strong>Tags:</strong>
+                  <span class="project-technology">Networking</span> ,
+                  <span class="project-technology">Low level</span> ,
+                  <span class="project-technology">Performance</span>
+                </p>
+              </div>
+            </div>
+            <div class="tile is-parent is-6">
+              <div class="tile is-child box">
+                <h1 class="title"><a href="https://gitlab.com/letFunny/simple-vue-stats">Simple Vue
+                    Stats/Dashboard</a><a class="demo" href="https://simple-vue-stats.netlify.app/">demo</a></h1>
+                <div class="subtitle description">
+                  <p>
+                    It is a very very simple dashboard that uses my other utility
+                    <strong>torrentstats</strong> to gather
+                    information on several torrents and displays it beautifully over
+                    several charts and a choropleth map. For instance, it shows that
+                    with geographical data from a movie we can estimate its popularity
+                    in each country.
+                  </p>
+                  <p>
+                    For more information please check the source README.
+                  </p>
+                </div>
+                <p class="subtitle project-technologies"><strong>Technologies:</strong>
+                  <span class="project-technology">JS</span> ,
+                  <span class="project-technology">Vue/Vuex</span> ,
+                  <span class="project-technology">HTML/CSS</span>
+                </p>
+                <p class="subtitle project-technologies"><strong>Tags:</strong>
+                  <span class="project-technology">Frontend</span> ,
+                  <span class="project-technology">Data visualization</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>-->
+    <section>
+      <h2>Talks</h2>
+      <h3>Git gud: how Git works internally (<a href="https://www.youtube.com/watch?v=xLt4Xa5DXk4">video</a>)</h3>
+      <p>
+      Most developers use Git daily but, despite that, they still find it to be
+      a source of frustration. For example, how many times have you created a
+      backup of the whole project before attempting to do anything with Git? My
+      promise is that you won't have to do that anymore after this talk!
+      </p>
+      <p>
+      I think it all comes down to the mental model we have when working with Git. We
+      are not going to cover several hundred Git commands and show pretty pictures of
+      commit graphs. We are going to get our hands dirty and explore together how Git
+      stores its state on disk inside the .git subdirectory. For each command that we
+      run we are going to inspect the results using low-level tools. By covering basic
+      operations in this way (git add, git commit, git checkout) you will gain a
+      deeper intuition, knowing what is possible and what is not.
+      </p>
+    </section>
+    <section>
+      <h2>Links</h2>
+      <div id="links">
+        <div class="social-card">
+          <img src="images/linkedin.png" alt="LinkedIn">
+          <hr>
+          <p>
+            <a href="https://linkedin.com/in/angel-alberto-carretero">@angel-alberto-carretero</a>
+          </p>
+        </div>
+        <div class="social-card">
+            <img src="images/github.png" alt="Github">
+          <hr>
+          <p>
+            <a href="https://github.com/letFunny">@letFunny</a>
+          </p>
+        </div>
+        <!--<div class="social-card">
+            <img src="images/hackthebox.png" alt="HackTheBox">
+          <hr>
+          <p>
+            <a href="https://app.hackthebox.eu/profile/84065">@letFunny</a>
+          </p>
+        </div>
+        <div class="social-card">
+            <img src="images/ctftime.png" alt="CTFTime">
+          <hr>
+          <p>
+            <a href="https://ctftime.org/team/112568">@SQLazo</a>
+          </p>
+        </div>
+      </div>-->
+              <!--<div class="tile is-3 is-child card">
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img src="images/gitlab.png" alt="Gitlab">
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-4">letFunny</p>
+                      <p class="subtitle is-6"><a href="https://gitlab.com/letFunny">@letFunny</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tile is-3 is-child card">
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img src="images/hackthebox.png" alt="HackTheBox">
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-4">letFunny</p>
+                      <p class="subtitle is-6"><a href="https://app.hackthebox.eu/profile/84065">@letFunny</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tile is-3 is-child card">
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img src="images/ctftime.png" alt="CTFTime">
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-4">letFunny</p>
+                      <p class="subtitle is-6"><a href="https://ctftime.org/team/112568">@SQLazo</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>-->
+    </section>
+    <section>
+      <h2>About this website</h2>
+      <p>
+        I have been interested in typography lately and I wanted to try out some ideas on this website. The design is based on
+        <a href="https://github.com/edwardtufte/tufte-css">Tufte CSS</a> which, on its own, is based on Edward Tufte books.
+        Nevertheless, all the errors in adapting the style to this website are mine.
+      </p>
+    </section>
+  </article>
+{% endblock content %}
+

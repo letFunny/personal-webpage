@@ -1,0 +1,57 @@
+nav {
+    float: right;
+    margin: 30px 30px 30px 30px;
+}
+
+nav a {
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+#links hr {
+    width: 100%;
+    text-align: center;
+}
+
+.social-card {
+    width: 150px;
+    text-align: center;
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+.social-card img {
+    width: auto;
+    height: 60px;
+    max-width: 100px;
+}
+
+/* Styles for code blocks in Zola. */
+.giallo-l {
+    display: inline-block;
+    min-height: 1lh;
+    width: 100%;
+}
+.giallo-ln {
+    display: inline-block;
+    user-select: none;
+    margin-right: 0.4em;
+    padding: 0.4em;
+    min-width: 3ch;
+    text-align: right;
+    opacity: 0.8;
+}
+
+code:not(pre code) {
+    font-size: inherit;
+    color: dimgray;
+}
+
